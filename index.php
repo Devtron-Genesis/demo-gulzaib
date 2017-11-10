@@ -49,7 +49,84 @@
       <div class=" col-lg-3 col-md-3">
         <p>100%</p><p>-SATISFIED GUARANTEE</p>
       </div>
-    </div>  
+    </div> 
+    <div class="container line">
+      <div class="col-lg-3 col-md-3"><img src="img/4.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/5.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/6.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/7.jpg"></div>
+    </div> 
+    </div> 
+    <br><br><br>
+    <div class="container line">
+      <div class="col-lg-3 col-md-3"><img src="img/8.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/9.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/10.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/11.jpg"></div>
+    </div> 
+    </div> 
+    <br><br><br>
+      <div class="container line">
+      <div class="col-lg-3 col-md-3"><img src="img/12.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/13.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/14.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/15.jpg"></div>
+    </div> 
+    </div> 
+    <br><br><br>
+      <div class="container line">
+      <div class="col-lg-3 col-md-3"><img src="img/16.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/17.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/18.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/19.jpg"></div>
+    </div> 
+    </div> 
+    <br><br><br>
+    <div class="container line">
+      <div class="col-lg-3 col-md-3"><img src="img/20.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/21.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/22.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/23.jpg"></div>
+    </div> 
+    </div> 
+    <br><br><br>
+    <div class="container line">
+      <div class="col-lg-3 col-md-3"><img src="img/24.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/25.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/26.jpg"></div>
+      <div class="col-lg-3 col-md-3"><img src="img/27.jpg"></div>
+    </div> 
+    </div> 
+    <br><br><br>
+    <div class="best container">
+      <h1>BESTSELLING NEW PRODUCTS</h1>
+      <div class="col-lg-2 col-md-2">
+        <img src="img/28.jpg">
+        <h5>Colorado, winter shoes lord</h5>
+        <h3>19, -</h3>
+      </div> 
+      <div class="col-lg-2 col-md-2">
+        <img src="img/29.jpg">
+        <h5>Aiken Jacket, winter park's lady</h5>
+        <h3>19, -</h3>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <img src="img/30.jpg">
+        <h5>PF Oxygen bar, Protein bar</h5>
+        <h3>19, -</h3>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <img src="img/31.jpg">
+        <h5>Colorado, winter shoes lord</h5>
+        <h3>19, -</h3>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <img src="img/32.jpg">
+        <h5>Rx Compression socks RED</h5>
+        <h3>19, -</h3>
+      </div>
+    </div>
+
   <?php 
     include('admin/footer.php');
   ?>
