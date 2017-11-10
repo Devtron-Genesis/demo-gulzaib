@@ -1,0 +1,11 @@
+@font-face {
+  font-family: avenir;
+  src: url("../font/AvenirLT/AvenirLT.woff");
+}
+@font-face {
+  font-family: rabiohead;
+  src: url("../font/rabiohead/rabiohead-webfont.woff");
+}
+* {
+  box-sizing: border-box;
+}
