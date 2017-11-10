@@ -242,14 +242,15 @@ input[type="email"] {
 .home-back {
 	background-image: url('../img/home-page.jpg');
 	background-size: 100%;
-  height: 862px;
-  position: relative;
+  height: 800px;
+  /*position: relative;*/
   top: -64px;
   z-index: -1;
+  margin-top: -20px;
 }
 .home-back h1 {
-	position: absolute;
-  top: 95px;
+	position: relative;
+  top: 51px;
   left: 170px;
   color: #fff;
   font-size: 63px;
@@ -260,8 +261,8 @@ input[type="email"] {
   text-transform: uppercase;
 }
 .home-back p {
-  position: absolute;
-  top: 285px;
+  position: relative;
+  top: 56px;
   left: 170px;
   color: #000;
   font-size: 17px;
@@ -281,9 +282,57 @@ input[type="email"] {
   border-color: #fc7a00;
   color: #fff;
 }
-.home-back a {
+.home-back p a {
 	color: #000;
+	text-decoration: none;
 }
-.home-back a:hover {
+.home-back p:hover a {
 	color: #fff;
+}
+.main-iamges {
+  top: 80px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}    
+img.one {
+    padding: 0px 2px;
+}
+img.two {
+	padding: 0px 2px;
+}
+img.three {
+	padding: 0px 2px;	
+}
+.main-iamges img {
+	border-radius: 5px;
+	height: 289px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.free {
+	text-align: center;
+	margin-top: 70px;
+}
+.free p:first-child {
+  color: #fc9433;
+  font-size: 46px;
+  font-family: "opensans";
+  font-weight: 900;
+}
+.free p:last-child {
+	font-size: 20px;
+  font-family: "opensans";
+  font-weight: 900;
+}
+.free p:first-child {
+	/*border-left: 1px solid #eee;*/
+}
+.free div {
+	border-left: 1px solid #ececec;
+}
+.free div:first-child {
+	border: none;
 }

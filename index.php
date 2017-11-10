@@ -25,19 +25,31 @@
   <?php 
     include('admin/header.php');
   ?>
-  <div class="">
     <div class="header">
       <div class="home-back">
         <h1>Extreme party purchases!</h1>
         <p><a href="#">Read this week's customer magazine here!</a></p>
-        <div>
-          <img src="../img/1.jpg" class="col-lg-6">
-          <img src="../img/2.jpg" class="col-lg-3">
-          <img src="../img/3.jpg" class="col-lg-3">
+        <div class=" main-iamges">
+          <a href="#"><img src="../img/1.jpg" class="one col-lg-6"></a>
+          <a href="#"><img src="../img/2.jpg" class="two col-lg-3"></a>
+          <a href="#"><img src="../img/3.jpg" class="three col-lg-3"></a>
         </div>
       </div>
     </div>
-  </div>
+    <div class="container free">  
+      <div class=" col-lg-3 col-md-3">
+        <p>100</p><p>-DAY OPEN PURCHASE</p>
+      </div>
+      <div class=" col-lg-3 col-md-3">
+        <p>FREE</p><p>-CHANGE AND RETURN</p>
+      </div>
+      <div class=" col-lg-3 col-md-3">
+        <p>30</p><p>-DAY PRICE TAG</p>
+      </div>
+      <div class=" col-lg-3 col-md-3">
+        <p>100%</p><p>-SATISFIED GUARANTEE</p>
+      </div>
+    </div>  
   <?php 
     include('admin/footer.php');
   ?>
