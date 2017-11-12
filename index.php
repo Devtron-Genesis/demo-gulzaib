@@ -50,6 +50,7 @@
         <p>100%</p><p>-SATISFIED GUARANTEE</p>
       </div>
     </div> 
+    <br><br><br>
     <div class="container line">
       <div class="col-lg-3 col-md-3"><img src="img/4.jpg"></div>
       <div class="col-lg-3 col-md-3"><img src="img/5.jpg"></div>
@@ -103,12 +104,12 @@
       <div class="col-lg-2 col-md-2">
         <img src="img/28.jpg">
         <h5>Colorado, winter shoes lord</h5>
-        <h3>19, -</h3>
+        <h3>1599, -</h3>
       </div> 
       <div class="col-lg-2 col-md-2">
         <img src="img/29.jpg">
         <h5>Aiken Jacket, winter park's lady</h5>
-        <h3>19, -</h3>
+        <h3>1500, -</h3>
       </div>
       <div class="col-lg-2 col-md-2">
         <img src="img/30.jpg">
@@ -118,12 +119,12 @@
       <div class="col-lg-2 col-md-2">
         <img src="img/31.jpg">
         <h5>Colorado, winter shoes lord</h5>
-        <h3>19, -</h3>
+        <h3>399, -</h3>
       </div>
       <div class="col-lg-2 col-md-2">
         <img src="img/32.jpg">
         <h5>Rx Compression socks RED</h5>
-        <h3>19, -</h3>
+        <h3>339, -</h3>
       </div>
     </div>
 
