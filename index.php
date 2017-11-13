@@ -27,12 +27,15 @@
   ?>
     <div class="header">
       <div class="home-back">
-        <h1>Extreme party purchases!</h1>
+        <h1>Winter Kick-Off 2017</h1>
         <p><a href="#">Read this week's customer magazine here!</a></p>
         <div class=" main-iamges">
           <a href="#"><img src="../img/1.jpg" class="one col-lg-6"></a>
           <a href="#"><img src="../img/2.jpg" class="two col-lg-3"></a>
           <a href="#"><img src="../img/3.jpg" class="three col-lg-3"></a>
+        </div>
+        <div class="skew">
+          <?php include('admin/skewwhite.php');  ?>
         </div>
       </div>
     </div>
@@ -101,31 +104,35 @@
     <br><br><br>
     <div class="best container">
       <h1>BESTSELLING NEW PRODUCTS</h1>
-      <div class="col-lg-2 col-md-2">
+      <div class="five1 col-lg-2 col-md-2">
         <img src="img/28.jpg">
         <h5>Colorado, winter shoes lord</h5>
         <h3>1599, -</h3>
       </div> 
-      <div class="col-lg-2 col-md-2">
+      <div class="five2 col-lg-2 col-md-2">
         <img src="img/29.jpg">
         <h5>Aiken Jacket, winter park's lady</h5>
         <h3>1500, -</h3>
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="five3 col-lg-2 col-md-2">
         <img src="img/30.jpg">
         <h5>PF Oxygen bar, Protein bar</h5>
         <h3>19, -</h3>
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="five4 col-lg-2 col-md-2">
         <img src="img/31.jpg">
         <h5>Colorado, winter shoes lord</h5>
         <h3>399, -</h3>
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="five5 col-lg-2 col-md-2">
         <img src="img/32.jpg">
         <h5>Rx Compression socks RED</h5>
         <h3>339, -</h3>
       </div>
+    </div>
+    <div class="backtotop col-lg-12 col-md-12" id="">
+      <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></a><br><br>
+      <p>TO THE TOP</p>
     </div>
 
   <?php 

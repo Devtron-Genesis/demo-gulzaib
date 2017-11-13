@@ -347,6 +347,91 @@ img.three {
 .best img {
 	width: 173px;
 }
+.five1 {
+	border: 2px solid #cfd1d3;
+	margin-left: 60px;
+  padding: 70px 10px;
+}
+.five2 {
+	border: 2px solid #cfd1d3;
+	margin-left: 20px;
+	padding: 70px 10px;
+}
+.five3 {
+	border: 2px solid #cfd1d3;
+	margin-left: 20px;
+	padding: 70px 10px;
+}
+.five4 {
+	border: 2px solid #cfd1d3;
+	margin-left: 20px;
+	padding: 70px 10px;
+}
+.five5 {
+	border: 2px solid #cfd1d3;
+	margin-left: 20px;
+	padding: 70px 10px;
+}
+.five1:hover, .five2:hover, .five3:hover, .five4:hover, .five5:hover {
+	border: 2px solid #fc7a00;
+}
+.skewwhite1 {
+  background-color: #fff;
+  transform: skewY(-12deg);
+  height: 148px;
+}
+.skewwhite2 {
+  background-color: #fff;
+  transform: skewY(7.4deg);
+  height: 149px;
+}
+.skewwhite3 {
+	background-color: #fff;
+  transform: skewY(-12deg);
+  height: 147px;
+  position: relative;
+  left: -1px;
+}
+.skewwhite4 {
+  background-color: #fff;
+  transform: skewY(33deg);
+  height: 146px;
+  position: relative;
+  left: -1px;
+}
+.skew {
+	position: relative;
+	top: 195px;
+}
 .best div {
-	border: 2px solid #ececec;
+	text-align: center;
+	border-radius: 5PX;
+}
+.backtotop i {
+	background-color: #000;
+	border: 1px solid #000;
+	padding: 0px 7px;
+	border-radius: 50px;
+	color: #C9DD03;
+	margin:0 auto;
+	font-weight: bold;
+}
+.backtotop {
+	text-align: center;
+	margin-top: 100px;
+}
+.main-iamges img:hover {
+	transform: scale(1.03);
+	transform: scale(1.03);
+	-ms-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;		
+}
+.line img:hover {
+	transform: scale(1.03);
+	-ms-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;	
 }
