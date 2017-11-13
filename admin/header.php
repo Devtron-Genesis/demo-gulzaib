@@ -19,7 +19,7 @@
   <link href="../css/rwd.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="start">
+  <div class="start navbar-fixed-top">
     <div class="container-fluid header">
       <div class="top-nav col-lg-12 col-md-12">
         <ul class="top-ul">
