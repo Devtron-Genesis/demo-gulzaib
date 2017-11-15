@@ -130,12 +130,10 @@
         <h3>339, -</h3>
       </div>
     </div>
-    <div class="backtotop col-lg-12 col-md-12" id="">
-      <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></a><br><br>
-      <p>TO THE TOP</p>
-    </div>
+  
 
   <?php 
+    include('admin/backtotop.php');
     include('admin/footer.php');
   ?>
 </body>

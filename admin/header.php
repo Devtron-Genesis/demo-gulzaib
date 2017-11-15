@@ -26,7 +26,7 @@
           <li><a href="#"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>XXL BLOG</a></li>
           <li><a href="#"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>OUR DEPARTMENT STORE</a></li>
           <li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i>CUSTOMER SERVICE</a></li>
-          <li><a href="#"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i>SIGN IN</a></li>
+          <li><a href="../admin/signin.php"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i>SIGN IN</a></li>
         </ul>
       </div>
       <div>

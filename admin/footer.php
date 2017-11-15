@@ -81,7 +81,7 @@
       <div class="newsletter col-lg-12 col-md-2 ">
         <form class="footersignin">
           <input type="email" name="email" placeholder="Sign up for our newsletter here">
-          <input type="submit" name="signin" value="SIGN IN" class="btn">
+          <input type="submit" name="newsletter" value="SIGN IN" class="btn">
         </form>
         <h5>By saying yes, you accept our terms.<a href="#">read more</a></h5>      
       </div>
