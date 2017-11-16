@@ -1,4 +1,7 @@
-
+<?php
+  include('admin/connection.php');
+  session_start(); 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -132,7 +135,7 @@
     </div>
   
 
-  <?php 
+  <?php
     include('admin/backtotop.php');
     include('admin/footer.php');
   ?>

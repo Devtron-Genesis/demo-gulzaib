@@ -1,5 +1,6 @@
 <?php
 	include('connection.php');
+  session_start(); 
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,6 +37,26 @@
   			<br>
   			<input type="submit" name="signin" required="" value="SIGN IN" class="btn  btn-block register1">
   		</form>
+  		<?php
+  			if (isset($_POST['signin'])) {
+	  				$email = $_POST['email'];
+	  				$password = $_POST['password'];
+          		$result1 = "SELECT * FROM register WHERE email = '$email' AND password = '$password'";
+    					$run1 = mysqli_query($conn, $result1);
+          		while ($row = mysqli_fetch_array($run1))  {
+	        		 	$email1 = $row['email'];
+	        		 	$password1 = $row['password'];
+                $_SESSION["email"] = $email1;
+                $_SESSION["password"] = $password1;
+	          			if (($email1 == $email) && ($password1 == $password)) {
+	            			echo "<script>window.location.href = 'mypage.php';</script>";
+	          			}
+	          			else {
+	            			echo "<p style='color:red;'>Password does not match<p>";
+	          			}
+	      			}  
+  			}
+  		?>
   	</div>
   	<div class="signup col-lg-7 col-md-7 col-sm-12 col-xs-12">
   		<h3>REGISTER</h3>
@@ -56,16 +77,16 @@
 	  				$password = $_POST['password'];
 	  				$sql = "INSERT INTO register (fname, lname, email, emailconf, password) VALUES ('$first_name','$last_name','$email','$emailconf','$password')" ;
           		mysqli_query($conn, $sql);
-          		$result = "SELECT * FROM signin WHERE email = $email AND emailconf = $emailconf";
+          		$result = "SELECT * FROM register WHERE email = '$email' AND emailconf = '$emailconf'";
     					$run = mysqli_query($conn, $result);
           		while ($row = mysqli_fetch_array($run))  {
-	        			echo $email = $row['email'];
-	        			echo $emailconf = $row['emailconf'];
+	        		 	$email = $row['email'];
+	        		 	$emailconf = $row['emailconf'];
 	          			if ($email == $emailconf) {
 	            			echo "<script>window.location.href = '../index.php';</script>";
 	          			}
 	          			else {
-	            			echo "<p>email does not match<p>";
+	            			echo "<p style='color:red;'>email does not match<p>";
 	          			}
 	      			}  
   			}

@@ -1,3 +1,7 @@
+<?php
+  include('connection.php');
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,16 +26,29 @@
   <div class="start navbar-fixed-top">
     <div class="container-fluid header">
       <div class="top-nav col-lg-12 col-md-12">
+        <form method="post">
         <ul class="top-ul">
           <li><a href="#"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>XXL BLOG</a></li>
           <li><a href="#"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>OUR DEPARTMENT STORE</a></li>
           <li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i>CUSTOMER SERVICE</a></li>
-          <li><a href="../admin/signin.php"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i>SIGN IN</a></li>
+          <?php 
+            if ($_SESSION['email']) {
+              echo "<li><a href='../index.php'><i class='fa fa-user-o fa-lg' aria-hidden='true'><input type='button' value='Click Me'></a></li>";
+              if (isset($_POST['logout'])) {
+                session_destroy(); 
+              }
+            }
+             else {
+              echo "<li><a href='../admin/signin.php'><i class='fa fa-user-o fa-lg' aria-hidden='true'></i>SIGN IN</a></li>";
+            }
+          ?>
+          
         </ul>
+        </form>
       </div>
       <div>
         <ul class="top-items col-md-12 col-lg-12">
-          <li class="col-lg-2 col-md-2"><img src="../img/logo1.png"></li>
+          <li class="col-lg-2 col-md-2"><a href="../index.php"><img src="../img/logo1.png"></a></li>
           <li class="col-lg-2 col-md-2"><h4>ALL SPORTS UNITED</h4></li>
           <li class="col-lg-5 col-md-5"><input type="search" name="search" class="form-control" placeholder="Search for Products"></li>
           <li class="col-lg-3 col-md-3"><a href="#"><i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i><a>
