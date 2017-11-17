@@ -1,6 +1,7 @@
 <?php
-  include('admin/connection.php');
+  include('connection.php');
   session_start(); 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,19 +27,19 @@
 </head>
 <body>
   <?php 
-    include('admin/header.php');
+    include('header.php');
   ?>
     <div class="header">
       <div class="home-back">
         <h1>Winter Kick-Off 2017</h1>
         <p><a href="#">Read this week's customer magazine here!</a></p>
         <div class=" main-iamges">
-          <a href="#"><img src="../img/1.jpg" class="one col-lg-6"></a>
-          <a href="#"><img src="../img/2.jpg" class="two col-lg-3"></a>
-          <a href="#"><img src="../img/3.jpg" class="three col-lg-3"></a>
+          <a href="#"><img src="img/1.jpg" class="one col-lg-6"></a>
+          <a href="#"><img src="img/2.jpg" class="two col-lg-3"></a>
+          <a href="#"><img src="img/3.jpg" class="three col-lg-3"></a>
         </div>
         <div class="skew">
-          <?php include('admin/skewwhite.php');  ?>
+          <?php include('skewwhite.php');  ?>
         </div>
       </div>
     </div>
@@ -136,8 +137,8 @@
   
 
   <?php
-    include('admin/backtotop.php');
-    include('admin/footer.php');
+    include('backtotop.php');
+    include('footer.php');
   ?>
 </body>
 </html>

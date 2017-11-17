@@ -1,6 +1,7 @@
 <?php
 	include('connection.php');
   session_start(); 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,23 +9,23 @@
   <title>XXL Sports and Wear Assessories</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Font Awsome -->
-  <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
-  <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Icon Style  -->
-  <link href="../css/IconSet/icon-set-new.css" rel="stylesheet"><!-- <link rel="stylesheet"  href="css/IconSet/fonts/untitled-font-3.ttf"> -->
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- Icon Style  -->
+  <link href="css/IconSet/icon-set-new.css" rel="stylesheet"><!-- <link rel="stylesheet"  href="css/IconSet/fonts/untitled-font-3.ttf"> -->
   <!-- Boot Strap -->
-  <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link rel="icon" type="image/png" href="../img/logo.png">
-  <script src="../bootstrap/js/tests/vendor/jquery.min.js"></script>
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <script src="bootstrap/js/tests/vendor/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- Style sheet -->
-  <script src="../js/script.js"> </script>
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
-  <link href="../css/rwd.css" rel="stylesheet" type="text/css">
+  <script src="js/script.js"> </script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/rwd.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<?php 
-    include('../admin/header.php');
+    include('header.php');
   ?>
   <div class="container account">
   	<h1>LOG IN OR CREATE ACCOUNT HERE</h1>
@@ -44,10 +45,12 @@
           		$result1 = "SELECT * FROM register WHERE email = '$email' AND password = '$password'";
     					$run1 = mysqli_query($conn, $result1);
           		while ($row = mysqli_fetch_array($run1))  {
+                $uid = $row['id'];
 	        		 	$email1 = $row['email'];
 	        		 	$password1 = $row['password'];
                 $_SESSION["email"] = $email1;
                 $_SESSION["password"] = $password1;
+                $_SESSION["uid"] = $uid;
 	          			if (($email1 == $email) && ($password1 == $password)) {
 	            			echo "<script>window.location.href = 'mypage.php';</script>";
 	          			}
@@ -83,7 +86,7 @@
 	        		 	$email = $row['email'];
 	        		 	$emailconf = $row['emailconf'];
 	          			if ($email == $emailconf) {
-	            			echo "<script>window.location.href = '../index.php';</script>";
+	            			echo "<script>window.location.href = 'index.php';</script>";
 	          			}
 	          			else {
 	            			echo "<p style='color:red;'>email does not match<p>";
@@ -94,8 +97,8 @@
   	</div>
   </div>
 	<?php 
-    include('../admin/backtotop.php');
-    include('../admin/footer.php');
+    include('backtotop.php');
+    include('footer.php');
 	?>
 </body>
 </html>
