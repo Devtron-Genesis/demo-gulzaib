@@ -36,30 +36,99 @@
       <input type="text" name="pname" class="form-control" placeholder="Enter the Product Name" required=""><br>
       <div class="form-group">
       <label for="sel1">Select Category (select one):</label>
-      <select class="form-control" id="category" name="pcategory" required="">
-        <option disabled selected value>All</option>
-        <option>Shoes</option>
-        <option>Sports Equipments</option>
-        <option>Clothes</option>
-      </select>
+      <fieldset>
+        <ol>
+          <li>
+            <input type="radio" name="residency" value="Immigrant" id="immigrant">
+            <label for="">Shoes</label>
+            <fieldset class="conditional">
+              <ul>
+                 <label for="sel1">Select Size:</label>
+                  <fieldset>
+                 <li>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">40</label>      
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">41</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">42</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">43</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">44</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">45</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">46</label>
+                </li>
+            </fieldset>
+              </ul>
+            </fieldset>
+          </li>
+          <li>
+            <input type="radio" name="residency" value="Immigrant" id="immigrant">
+            <label for="">Clothes</label>
+            <fieldset class="conditional">
+              <ul>
+                 <label for="sel1">Select Size:</label>
+                  <fieldset>
+                 <li>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">XL</label>      
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">Large</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">Medium</label>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">Small</label>
+                  <input type="checkbox" id="requirement" class="control">
+                </li>
+            </fieldset>
+              </ul>
+            </fieldset>
+          </li>
+          <li>
+            <input type="radio" name="residency" value="Immigrant" id="immigrant">
+            <label for="">Sports Equipments</label>
+            <fieldset class="conditional">
+              <ul>
+                 <label for="sel1">Select Size:</label>
+                  <fieldset>
+                 <li>
+                  <input type="checkbox" id="requirement" class="control">
+                  <label for="requirement">Standard</label>      
+                </li>
+            </fieldset>
+              </ul>
+            </fieldset>
+          </li>
+        </ol>
+      </fieldset>
       <br>
-      <label for="sel1">Select Size (select one):</label>
-      <select class="form-control" id="size" name="psize" required="">
-        <option disabled selected value>All</option>
-        <option>XL</option>
-        <option>Large</option>
-        <option>Medium</option>
-        <option>Small</option>
-      </select>
+      
         <br>
       <label for="sel1">Select Color (select one):</label>
-      <select class="form-control" id="color" name="pcolor" required="">
-        <option disabled selected value>All</option>
-        <option>Black</option>
-        <option>White</option>
-        <option>Blue</option>
-        <option>Yellow</option>
-      </select> 
+        <ul>
+          <label for="sel1">Select Size:</label>
+          <fieldset>
+         <li>
+            <input type="checkbox" id="requirement" class="control">
+            <label for="requirement">Black</label>      
+          </li>
+          <li>
+            <input type="checkbox" id="requirement" class="control">
+            <label for="requirement">Blue</label>      
+          </li>
+          <li>
+            <input type="checkbox" id="requirement" class="control">
+            <label for="requirement">Yellow</label>      
+          </li>
+          <li>
+            <input type="checkbox" id="requirement" class="control">
+            <label for="requirement">White</label>      
+          </li>
+          </fieldset>
+      </ul>
     <br>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
     <input type="number" name="price" min="1" max="5000000" required="" class="form-control" placeholder="Enter the Price">
@@ -108,19 +177,19 @@
           mysqli_query($conn, $sql1);
           if ($sql1) {
             $last_id = mysqli_insert_id($conn);
-            $color_id = $last_id + $c_id;
+            $color_id = $last_id;
           }
           $sql2 = "INSERT INTO size (psize) values ('$psize')";
           mysqli_query($conn, $sql2);
           if ($sql2) {
             $last_id1 = mysqli_insert_id($conn);
-            $size_id = $last_id1 + $s_id;
+            $size_id = $last_id1 ;
           }
           $sql3 = "INSERT INTO category (pname,pcategory,discription,size_id,color_id) values ('$pname','$pcategory','$discription','$size_id','$color_id')";
           mysqli_query($conn, $sql3);
           if ($sql3) {
             $last_id2 = mysqli_insert_id($conn);
-            $pro_id = $last_id2 + $p_id;
+            $pro_id = $last_id2;
           }
           $sql4 = "INSERT INTO price (price,pro_id,color_id,size_id) values ('$price','$pro_id','$color_id','$size_id')";
           mysqli_query($conn, $sql4);

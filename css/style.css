@@ -631,3 +631,27 @@ input.form-control.register1:last-child {
 .file-upload input[type='file'] {
 	float: left;
 }
+.control:checked ~ .conditional,
+	#immigrant:checked ~ .conditional,
+	#required-2:checked ~ .conditional
+	#option-2:checked ~ .conditional {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+.control:not(:checked) ~ .conditional,
+	#immigrant:not(:checked) ~ .conditional,
+	#required-2:not(:checked) ~ .conditional,
+	#option-2:not(:checked) ~ .conditional {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+		}
