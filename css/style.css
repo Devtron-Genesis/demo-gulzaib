@@ -628,3 +628,6 @@ input.form-control.register1:last-child {
 .page-password input[type=submit] {
 	margin-top: 110px;
 }
+.file-upload input[type='file'] {
+	float: left;
+}
