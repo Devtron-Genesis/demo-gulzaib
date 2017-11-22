@@ -36,10 +36,10 @@
       <input type="text" name="pname" class="form-control" placeholder="Enter the Product Name" required=""><br>
       <div class="form-group">
       <label for="sel1">Select Category (select one):</label>
-      <fieldset>
+ <!--      <fieldset>
         <ul>
           <li>
-            <input type="checkbox" id="requirement-2" class="control">
+            <input type="radio" name="residency" value="Immigrant" id="immigrant">
             <label for="requirement-2">Shoes</label>
             <fieldset class="conditional">
               <ul>
@@ -224,7 +224,7 @@
       <fieldset>
         <ul>
           <li>
-            <input type="checkbox" id="requirement-2" class="control">
+            <input type="radio" name="residency" value="Immigrant" id="immigrant">
             <label for="requirement-2">Cloths</label>
             <fieldset class="conditional">
               <ul>
@@ -409,7 +409,7 @@
       <fieldset>
         <ul>
           <li>
-            <input type="checkbox" id="requirement-2" class="control">
+           <input type="radio" name="residency" value="Immigrant" id="immigrant">
             <label for="requirement-2">Sports Equipments</label>
             <fieldset class="conditional">
               <ul>
@@ -439,7 +439,7 @@
             </fieldset>
           </li>
         </ul>
-      </fieldset>
+      </fieldset> -->
       <br>
       <br>
       <label for="sel1">Enter The Discription About Product:</label>
@@ -455,7 +455,7 @@
       
       <input type="hidden" name="size" value="1000000">
       <div class="file-upload">
-        <input type="file" name="image" required="">
+        <input type="file" name="image[]" required="" multiple="">
         <input type="submit" value="Upload Image" name="image" required="">
       </div>
       </form>
@@ -503,10 +503,14 @@
           $sql4 = "INSERT INTO price (price,pro_id,color_id,size_id) values ('$price','$pro_id','$color_id','$size_id')";
           mysqli_query($conn, $sql4);
           $target = "product-upload/" .basename($_FILES['image']['name']);
-          $images = $_FILES['image']['name'];
-          $sql = "INSERT INTO uploadpic (propicture) values ('$images')";
-          mysqli_query($conn, $sql);
-          move_uploaded_file($_FILES['image']['tmp_name'], $target);
+          for ($i=0; $i <count($_FILES['image']['name']) ; $i++) { 
+            
+            $images = $_FILES['image']['name'][$i];
+            $sql = "INSERT INTO uploadpic (propicture) values ('$images')";
+            mysqli_query($conn, $sql);
+            move_uploaded_file($_FILES['image']['tmp_name'], $target);
+          }
+          
         }
       ?>
 </div>
