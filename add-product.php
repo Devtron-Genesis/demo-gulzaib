@@ -36,7 +36,7 @@
       <input type="text" name="pname" class="form-control" placeholder="Enter the Product Name" required=""><br>
       <div class="form-group">
       <label for="sel1">Select Category (select one):</label>
- <!--      <fieldset>
+      <fieldset>
         <ul>
           <li>
             <input type="radio" name="residency" value="Immigrant" id="immigrant">
@@ -55,7 +55,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -72,7 +76,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -89,7 +97,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -114,7 +126,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -131,7 +147,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -148,7 +168,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -173,7 +197,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -190,7 +218,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -207,7 +239,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -240,7 +276,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -257,7 +297,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -274,7 +318,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -299,7 +347,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -316,7 +368,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -333,7 +389,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -358,7 +418,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -375,7 +439,11 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
       <br>
                       </li>
                     </ul>
@@ -392,7 +460,10 @@
                   <ul>
                     <li>
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
       <br>
                       </li>
                     </ul>
@@ -412,21 +483,19 @@
            <input type="radio" name="residency" value="Immigrant" id="immigrant">
             <label for="requirement-2">Sports Equipments</label>
             <fieldset class="conditional">
-              <ul>
-                <li>
-                  <input type="checkbox" id="option-2">
-                  <label for="option-2">standard</label>
-                  <fieldset class="conditional">
+
                   <ul>
                     <li>
                       <input type="checkbox" id="option-2">
                       <label for="option-2">standard</label>
                       <fieldset class="conditional">
-                  <ul>
-                    <li>
+
     <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" required="" class="" placeholder="PKR">
-      <br>
+    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
+    <li> <label for="sel1">Select Quantity:</label>
+    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
+
+
                       </li>
                     </ul>
                   </fieldset>
@@ -439,7 +508,7 @@
             </fieldset>
           </li>
         </ul>
-      </fieldset> -->
+      </fieldset>
       <br>
       <br>
       <label for="sel1">Enter The Discription About Product:</label>
