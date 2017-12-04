@@ -632,9 +632,9 @@ input.form-control.register1:last-child {
 	float: left;
 }
 .control:checked ~ .conditional,
-	#immigrant:checked ~ .conditional,
-	#required-2:checked ~ .conditional
-	#option-2:checked ~ .conditional {
+#immigrant:checked ~ .conditional,
+#required-2:checked ~ .conditional
+#option-2:checked ~ .conditional {
 	clip: auto;
 	height: auto;
 	margin: 0;
@@ -643,9 +643,9 @@ input.form-control.register1:last-child {
 	width: auto;
 }
 .control:not(:checked) ~ .conditional,
-	#immigrant:not(:checked) ~ .conditional,
-	#required-2:not(:checked) ~ .conditional,
-	#option-2:not(:checked) ~ .conditional {
+#immigrant:not(:checked) ~ .conditional,
+#required-2:not(:checked) ~ .conditional,
+#option-2:not(:checked) ~ .conditional {
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
@@ -654,4 +654,19 @@ input.form-control.register1:last-child {
 	padding: 0;
 	position: absolute;
 	width: 1px;
-		}
+}
+.product_page {
+	margin-top: 150px;
+}
+#ex1 {
+  width: 555px;
+  height: 320px;
+}
+.product-detail img {
+	width: 9%;
+}
+.buy {
+	background-color:	#eeeeef;
+	border-radius: 4px;
+  margin-bottom: 44px;
+}

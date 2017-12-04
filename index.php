@@ -59,7 +59,7 @@
     </div> 
     <br><br><br>
     <div class="container line">
-      <div class="col-lg-3 col-md-3"><img src="img/4.jpg"></div>
+      <div class="col-lg-3 col-md-3"><a href="product-page.php"><img src="img/4.jpg"></a></div>
       <div class="col-lg-3 col-md-3"><img src="img/5.jpg"></div>
       <div class="col-lg-3 col-md-3"><img src="img/6.jpg"></div>
       <div class="col-lg-3 col-md-3"><img src="img/7.jpg"></div>

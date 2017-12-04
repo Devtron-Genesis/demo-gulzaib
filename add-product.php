@@ -28,491 +28,451 @@
     include('header.php');
   ?>
   <div class="mypage-img"></div>
-  <div class="container">
-      
+  <div class="container"> 
     <form action="add-product.php" method="post" enctype="multipart/form-data">
       <br>
       <label for="sel1">Enter the Product Name:</label>
-      <input type="text" name="pname" class="form-control" placeholder="Enter the Product Name" required=""><br>
+      <!-- <input type="text" name="pname" class="form-control" placeholder="Enter the Product Name" required=""><br> -->
       <div class="form-group">
       <label for="sel1">Select Category (select one):</label>
       <fieldset>
         <ul>
           <li>
-            <input type="radio" name="residency" value="Immigrant" id="immigrant">
+            <input type="radio" name="check" value="Shoes" id="immigrant">
             <label for="requirement-2">Shoes</label>
             <fieldset class="conditional">
               <ul>
                 <li>
-                  <input type="checkbox" id="option-2">
+                  <input type="checkbox" id="option-2" name="40s_size[]" value="40">
                   <label for="option-2">40</label>
                   <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">Black</label>
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="option-2" name="40s_color[]" value="black">
+                        <label for="option-2">Black</label>
+                        <fieldset class="conditional">
+                          <ul>
+                            <li>
+                              <label for="sel1">Select Price (The price Will be in PKR):</label>
+                              <input type="text" name="40s_price[]" value="">
+                              <li> <label for="sel1">Select Quantity:</label>
+                                <input type="text" name="">
+                                <br>
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <fieldset class="conditional">
+                      <ul>
+                        <li>
+                          <input type="checkbox" id="option-2" name="40s_color[]" value="blue">
+                          <label for="option-2">blue</label>
+                          <fieldset class="conditional">
+                            <ul>
+                              <li>
+                                <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                <input type="text" name="40s_price[]" value="">
+                                <li> <label for="sel1">Select Quantity:</label>
+                                  <input type="text" name="">
+                                  <br>
+                                </li>
+                              </ul>
+                            </fieldset>
+                          </li>
+                        </ul>
+                      </fieldset>
                       <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
+                        <ul>
+                          <li>
+                            <input type="checkbox" id="option-2" name="40s_color[]" value="white">
+                            <label for="option-2">white</label>
+                            <fieldset class="conditional">
+                              <ul>
+                                <li>
+                                  <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                  <input type="text" name="40s_price[]" value="">
+                                  <li> <label for="sel1">Select Quantity:</label>
+                                    <input type="text" name="">
+                                    <br>
+                                  </li>
+                                </ul>
+                              </fieldset>
+                            </li>
+                          </ul>
+                        </fieldset>
                       </li>
                     </ul>
-                  </fieldset>
-                </li>
-              </ul>
                   </fieldset>
                   <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">blue</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">white</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="conditional">
-              <ul>
-                <li>
-                  <input type="checkbox" id="option-2">
-                  <label for="option-2">41</label>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">black</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">blue</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">white</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="conditional">
-              <ul>
-                <li>
-                  <input type="checkbox" id="option-2">
-                  <label for="option-2">42</label>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">black</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">blue</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">white</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <ul>
-          <li>
-            <input type="radio" name="residency" value="Immigrant" id="immigrant">
-            <label for="requirement-2">Cloths</label>
-            <fieldset class="conditional">
-              <ul>
-                <li>
-                  <input type="checkbox" id="option-2">
-                  <label for="option-2">large</label>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">black</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">blue</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">white</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="conditional">
-              <ul>
-                <li>
-                  <input type="checkbox" id="option-2">
-                  <label for="option-2">medium</label>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">black</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">blue</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">white</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="conditional">
-              <ul>
-                <li>
-                  <input type="checkbox" id="option-2">
-                  <label for="option-2">small</label>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">black</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">blue</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  <fieldset class="conditional">
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">white</label>
-                      <fieldset class="conditional">
-                  <ul>
-                    <li>
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-      <br>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <ul>
-          <li>
-           <input type="radio" name="residency" value="Immigrant" id="immigrant">
-            <label for="requirement-2">Sports Equipments</label>
-            <fieldset class="conditional">
-
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="option-2">
-                      <label for="option-2">standard</label>
-                      <fieldset class="conditional">
-
-    <label for="sel1">Select Price (The price Will be in PKR):</label>
-    <input type="number" name="price" min="1" max="5000000" class="" placeholder="PKR">
-    <li> <label for="sel1">Select Quantity:</label>
-    <input type="number" name="price" min="1" max="5000000"  class="" placeholder="QTY"></li>
-
-
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-                  </fieldset>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-          </li>
-        </ul>
-      </fieldset>
-      <br>
-      <br>
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="option-2" name="41s_size[]" value="41">
+                        <label for="option-2">41</label>
+                        <fieldset class="conditional">
+                          <ul>
+                            <li>
+                              <input type="checkbox" id="option-2" name="41s_color[]" value="black">
+                              <label for="option-2">black</label>
+                              <fieldset class="conditional">
+                                <ul>
+                                  <li>
+                                    <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                    <input type="text" name="41s_price[]">
+                                    <li> <label for="sel1">Select Quantity:</label>
+                                      <input type="text" name="">
+                                      <br>
+                                    </li>
+                                  </ul>
+                                </fieldset>
+                              </li>
+                            </ul>
+                          </fieldset>
+                          <fieldset class="conditional">
+                            <ul>
+                              <li>
+                                <input type="checkbox" id="option-2" name="41s_color[]" value="blue">
+                                <label for="option-2">blue</label>
+                                <fieldset class="conditional">
+                                  <ul>
+                                    <li>
+                                      <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                      <input type="text" name="41s_price[]">
+                                      <li> <label for="sel1">Select Quantity:</label>
+                                        <input type="text" name="">
+                                        <br>
+                                      </li>
+                                    </ul>
+                                  </fieldset>
+                                </li>
+                              </ul>
+                            </fieldset>
+                            <fieldset class="conditional">
+                              <ul>
+                                <li>
+                                  <input type="checkbox" id="option-2" name="41s_color[]" value="white">
+                                  <label for="option-2">white</label>
+                                  <fieldset class="conditional">
+                                    <ul>
+                                      <li>
+                                        <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                        <input type="text" name="41s_price[]">
+                                        <li> <label for="sel1">Select Quantity:</label>
+                                          <input type="text" name="">
+                                          <br>
+                                        </li>
+                                      </ul>
+                                    </fieldset>
+                                  </li>
+                                </ul>
+                              </fieldset>
+                            </li>
+                          </ul>
+                        </fieldset>
+                        <fieldset class="conditional">
+                          <ul>
+                            <li>
+                              <input type="checkbox" id="option-2" name="42s_size[]" value="42">
+                              <label for="option-2">42</label>
+                              <fieldset class="conditional">
+                                <ul>
+                                  <li>
+                                    <input type="checkbox" id="option-2" name="42s_color[]" value="black">
+                                    <label for="option-2">black</label>
+                                    <fieldset class="conditional">
+                                      <ul>
+                                        <li>
+                                          <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                          <input type="text" name="42s_price[]">
+                                          <li> <label for="sel1">Select Quantity:</label>
+                                            <input type="text" name="">
+                                            <br>
+                                          </li>
+                                        </ul>
+                                      </fieldset>
+                                    </li>
+                                  </ul>
+                                </fieldset>
+                                <fieldset class="conditional">
+                                  <ul>
+                                    <li>
+                                      <input type="checkbox" id="option-2" name="42s_color[]" value="blue">
+                                      <label for="option-2">blue</label>
+                                      <fieldset class="conditional">
+                                        <ul>
+                                          <li>
+                                            <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                            <input type="text" name="42s_price[]">
+                                            <li> <label for="sel1">Select Quantity:</label>
+                                              <input type="text" name="">
+                                              <br>
+                                            </li>
+                                          </ul>
+                                        </fieldset>
+                                      </li>
+                                    </ul>
+                                  </fieldset>
+                                  <fieldset class="conditional">
+                                    <ul>
+                                      <li>
+                                        <input type="checkbox" id="option-2" name="42s_color[]" value="white">
+                                        <label for="option-2">white</label>
+                                        <fieldset class="conditional">
+                                          <ul>
+                                            <li>
+                                              <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                              <input type="text" name="42s_price[]">
+                                              <li> <label for="sel1">Select Quantity:</label>
+                                                <input type="text" name="">
+                                                <br>
+                                              </li>
+                                            </ul>
+                                          </fieldset>
+                                        </li>
+                                      </ul>
+                                    </fieldset>
+                                  </li>
+                                </ul>
+                              </fieldset>
+                            </li>
+                          </ul>
+                        </fieldset>
+                        <fieldset>
+                          <ul>
+                            <li>
+                              <input type="radio" name="check" value="Clothes" id="immigrant">
+                              <label for="requirement-2">Clothes</label>
+                              <fieldset class="conditional">
+                                <ul>
+                                  <li>
+                                    <input type="checkbox" id="option-2">
+                                    <label for="option-2">large</label>
+                                    <fieldset class="conditional">
+                                      <ul>
+                                        <li>
+                                          <input type="checkbox" id="option-2">
+                                          <label for="option-2">black</label>
+                                          <fieldset class="conditional">
+                                            <ul>
+                                              <li>
+                                                <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                <input type="text" name="">
+                                                <li> <label for="sel1">Select Quantity:</label>
+                                                  <input type="text" name="">
+                                                  <br>
+                                                </li>
+                                              </ul>
+                                            </fieldset>
+                                          </li>
+                                        </ul>
+                                      </fieldset>
+                                      <fieldset class="conditional">
+                                        <ul>
+                                          <li>
+                                            <input type="checkbox" id="option-2">
+                                            <label for="option-2">blue</label>
+                                            <fieldset class="conditional">
+                                              <ul>
+                                                <li>
+                                                  <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                  <input type="text" name="">
+                                                  <li> <label for="sel1">Select Quantity:</label>
+                                                    <input type="text" name="">
+                                                    <br>
+                                                  </li>
+                                                </ul>
+                                              </fieldset>
+                                            </li>
+                                          </ul>
+                                        </fieldset>
+                                        <fieldset class="conditional">
+                                          <ul>
+                                            <li>
+                                              <input type="checkbox" id="option-2">
+                                              <label for="option-2">white</label>
+                                              <fieldset class="conditional">
+                                                <ul>
+                                                  <li>
+                                                    <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                    <input type="text" name="">
+                                                    <li> <label for="sel1">Select Quantity:</label>
+                                                      <input type="text" name="">
+                                                      <br>
+                                                    </li>
+                                                  </ul>
+                                                </fieldset>
+                                              </li>
+                                            </ul>
+                                          </fieldset>
+                                        </li>
+                                      </ul>
+                                    </fieldset>
+                                    <fieldset class="conditional">
+                                      <ul>
+                                        <li>
+                                          <input type="checkbox" id="option-2">
+                                          <label for="option-2">medium</label>
+                                          <fieldset class="conditional">
+                                            <ul>
+                                              <li>
+                                                <input type="checkbox" id="option-2">
+                                                <label for="option-2">black</label>
+                                                <fieldset class="conditional">
+                                                  <ul>
+                                                    <li>
+                                                      <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                      <input type="text" name="">
+                                                      <li> <label for="sel1">Select Quantity:</label>
+                                                        <input type="text" name="">
+                                                        <br>
+                                                      </li>
+                                                    </ul>
+                                                  </fieldset>
+                                                </li>
+                                              </ul>
+                                            </fieldset>
+                                            <fieldset class="conditional">
+                                              <ul>
+                                                <li>
+                                                  <input type="checkbox" id="option-2">
+                                                  <label for="option-2">blue</label>
+                                                  <fieldset class="conditional">
+                                                    <ul>
+                                                      <li>
+                                                        <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                        <input type="text" name="">
+                                                        <li> <label for="sel1">Select Quantity:</label>
+                                                          <input type="text" name="">
+                                                          <br>
+                                                        </li>
+                                                      </ul>
+                                                    </fieldset>
+                                                  </li>
+                                                </ul>
+                                              </fieldset>
+                                              <fieldset class="conditional">
+                                                <ul>
+                                                  <li>
+                                                    <input type="checkbox" id="option-2">
+                                                    <label for="option-2">white</label>
+                                                    <fieldset class="conditional">
+                                                      <ul>
+                                                        <li>
+                                                          <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                          <input type="text" name="">
+                                                          <li> <label for="sel1">Select Quantity:</label>
+                                                            <input type="text" name="">
+                                                            <br>
+                                                          </li>
+                                                        </ul>
+                                                      </fieldset>
+                                                    </li>
+                                                  </ul>
+                                                </fieldset>
+                                              </li>
+                                            </ul>
+                                          </fieldset>
+                                          <fieldset class="conditional">
+                                            <ul>
+                                              <li>
+                                                <input type="checkbox" id="option-2">
+                                                <label for="option-2">small</label>
+                                                <fieldset class="conditional">
+                                                  <ul>
+                                                    <li>
+                                                      <input type="checkbox" id="option-2">
+                                                      <label for="option-2">black</label>
+                                                      <fieldset class="conditional">
+                                                        <ul>
+                                                          <li>
+                                                            <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                            <input type="text" name="">
+                                                            <li> <label for="sel1">Select Quantity:</label>
+                                                              <input type="text" name="">
+                                                              <br>
+                                                            </li>
+                                                          </ul>
+                                                        </fieldset>
+                                                      </li>
+                                                    </ul>
+                                                  </fieldset>
+                                                  <fieldset class="conditional">
+                                                    <ul>
+                                                      <li>
+                                                        <input type="checkbox" id="option-2">
+                                                        <label for="option-2">blue</label>
+                                                        <fieldset class="conditional">
+                                                          <ul>
+                                                            <li>
+                                                              <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                              <input type="text" name="">
+                                                              <li> <label for="sel1">Select Quantity:</label>
+                                                                <input type="text" name="">
+                                                                <br>
+                                                              </li>
+                                                            </ul>
+                                                          </fieldset>
+                                                        </li>
+                                                      </ul>
+                                                    </fieldset>
+                                                    <fieldset class="conditional">
+                                                      <ul>
+                                                        <li>
+                                                          <input type="checkbox" id="option-2">
+                                                          <label for="option-2">white</label>
+                                                          <fieldset class="conditional">
+                                                            <ul>
+                                                              <li>
+                                                                <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                                <input type="text" name="">
+                                                                <li> <label for="sel1">Select Quantity:</label>
+                                                                  <input type="text" name="">
+                                                                  <br>
+                                                                </li>
+                                                              </ul>
+                                                            </fieldset>
+                                                          </li>
+                                                        </ul>
+                                                      </fieldset>
+                                                    </li>
+                                                  </ul>
+                                                </fieldset>
+                                              </li>
+                                            </ul>
+                                          </fieldset>
+                                          <fieldset>
+                                            <ul>
+                                              <li>
+                                                <input type="radio" name="check" value="Sports Equipments" id="immigrant">
+                                                <label for="requirement-2">Sports Equipments</label>
+                                                <fieldset class="conditional">
+                                                  <ul>
+                                                    <li>
+                                                      <input type="checkbox" id="option-2">
+                                                      <label for="option-2">standard</label>
+                                                      <fieldset class="conditional">
+                                                        <label for="sel1">Select Price (The price Will be in PKR):</label>
+                                                        <input type="text" name="">
+                                                        <li> <label for="sel1">Select Quantity:</label>
+                                                          <input type="text" name="">
+                                                        </li>
+                                                      </ul>
+                                                    </fieldset>
+                                                  </li>
+                                                </ul>
+                                              </fieldset>
+                                            </fieldset>
+                                          </li>
+                                        </ul>
+                                      </fieldset>
+                                    </li>
+                                  </ul>
+                                </fieldset>
+                                <br>
+                                <br>
       <label for="sel1">Enter The Discription About Product:</label>
-      <textarea class="form-control" required="" name="discription" rows="15"></textarea><br><br>
+      <!-- <textarea class="form-control" required="" name="discription" rows="15"></textarea><br><br> -->
     <?php
     //  $sql1 = "SELECT * FROM uploadpic";
      // $result = mysqli_query($conn, $sql1);
@@ -524,63 +484,87 @@
       
       <input type="hidden" name="size" value="1000000">
       <div class="file-upload">
-        <input type="file" name="image[]" required="" multiple="">
+     <!--    <input type="file" name="image" required="" >
+        <input type="file" name="image1" required="" >
+        <input type="file" name="image2" required="" > -->
         <input type="submit" value="Upload Image" name="image" required="">
       </div>
       </form>
       <?php
         if (isset($_POST['image'])) {
-          $pname = $_POST['pname'];
-          $pcategory = $_POST['pcategory'];
-          $psize = $_POST['psize'];
-          $pcolor = $_POST['pcolor'];
-          $price = $_POST['price'];
-          $discription = $_POST['discription'];
-          $query = "SELECT id FROM size WHERE psize = '$psize'";
+            $pname = $_POST['pname'];
+            $discription = $_POST['discription'];
+            $category = $_POST['check'];
+            $s_color = $_POST['40s_color'];
+            $s_color = $_POST['41s_color'];
+            $s_color = $_POST['42s_color'];
+            $s_size = $_POST['40s_size'];
+            $s_size = $_POST['41s_size'];
+            $s_size = $_POST['42s_size'];
+            $s_price = $_POST['40s_price'];
+            $s_price = $_POST['41s_price'];
+            $s_price = $_POST['42s_price'];
+            // $s_proid = $_POST[]; 
+
+            // FORIGN kEY
+            
+          // CATEGORY
+          $sql = "INSERT INTO category (pname,pcategory,discription) values ('$pname','$category','$discription')";
+          mysqli_query($conn, $sql);
+            if ($sql) {
+             $query = "SELECT id FROM category WHERE pcategory = '$category'";
             $run = mysqli_query($conn, $query);
             while ($row = mysqli_fetch_array($run))  {
-              $s_id = $row ['id'];
+             $s_proid = $row ['id'];
               }
-          $query1 = "SELECT id FROM color WHERE pcolor = '$pcolor'";
-            $run1 = mysqli_query($conn, $query1);
-            while ($row = mysqli_fetch_array($run1))  {
-              $c_id = $row ['id'];
-              }
-          $query2 = "SELECT id FROM category WHERE pcategory = '$pcategory'";
-            $run2 = mysqli_query($conn, $query2);
-            while ($row = mysqli_fetch_array($run2))  {
-              $p_id = $row ['id'];
-              }    
-          $sql1 = "INSERT INTO color (pcolor,color_code) values ('$pcolor','')";
+          }
+          // SHOES
+          for ($i=0; $i <count($_POST['40s_size']) ; $i++) { 
+            $s_size = $_POST['40s_size'][$i];
+            for ($j=0; $j <count($_POST['40s_color']) ; $j++) { 
+              $s_color = $_POST['40s_color'][$j];
+              $sql1 = "INSERT INTO shoes (color,size,price,pro_id) values ('$s_color','$s_size','$s_price','$s_proid')";
+              mysqli_query($conn, $sql1);
+            }
+          }
+          for ($i=0; $i <count($_POST['41s_size']) ; $i++) { 
+            $s_size = $_POST['41s_size'][$i];
+            for ($j=0; $j <count($_POST['41s_color']) ; $j++) { 
+              $s_color = $_POST['41s_color'][$j];
+              
+          $sql1 = "INSERT INTO shoes (color,size,price,pro_id) values ('$s_color','$s_size','$s_price','$s_proid')";
           mysqli_query($conn, $sql1);
-          if ($sql1) {
-            $last_id = mysqli_insert_id($conn);
-            $color_id = $last_id;
+            }
           }
-          $sql2 = "INSERT INTO size (psize) values ('$psize')";
-          mysqli_query($conn, $sql2);
-          if ($sql2) {
-            $last_id1 = mysqli_insert_id($conn);
-            $size_id = $last_id1 ;
+          for ($i=0; $i <count($_POST['42s_size']) ; $i++) { 
+            $s_size = $_POST['42s_size'][$i];
+            for ($j=0; $j <count($_POST['42s_color']) ; $j++) { 
+              $s_color = $_POST['42s_color'][$j];
+          $sql1 = "INSERT INTO shoes (color,size,price,pro_id) values ('$s_color','$s_size','$s_price','$s_proid')";
+          mysqli_query($conn, $sql1);
+            }
           }
-          $sql3 = "INSERT INTO category (pname,pcategory,discription,size_id,color_id) values ('$pname','$pcategory','$discription','$size_id','$color_id')";
-          mysqli_query($conn, $sql3);
-          if ($sql3) {
-            $last_id2 = mysqli_insert_id($conn);
-            $pro_id = $last_id2;
-          }
-          $sql4 = "INSERT INTO price (price,pro_id,color_id,size_id) values ('$price','$pro_id','$color_id','$size_id')";
-          mysqli_query($conn, $sql4);
+
+          // IMAGE UPLOAD
           $target = "product-upload/" .basename($_FILES['image']['name']);
-          for ($i=0; $i <count($_FILES['image']['name']) ; $i++) { 
-            
-            $images = $_FILES['image']['name'][$i];
-            $sql = "INSERT INTO uploadpic (propicture) values ('$images')";
-            mysqli_query($conn, $sql);
+            $images = $_FILES['image']['name'];
             move_uploaded_file($_FILES['image']['tmp_name'], $target);
+             $target = "product-upload/" .basename($_FILES['image1']['name']);
+            $images1 = $_FILES['image1']['name'];
+            move_uploaded_file($_FILES['image1']['tmp_name'], $target);
+             $target = "product-upload/" .basename($_FILES['image2']['name']);
+            $images2 = $_FILES['image2']['name'];
+            move_uploaded_file($_FILES['image2']['tmp_name'], $target);
+            $sql = "INSERT INTO uploadpic (propicture,second,third,pro_id) values ('$images','$images1','$images2',$s_proid)";
+            $result = mysqli_query($conn, $sql);
+            // if ($result) {
+            //   $query = "SELECT * FROM uploadpic WHERE propicture = '$' AND "; 
+            // $run = mysqli_query($conn, $query);
+            // while ($row = mysqli_fetch_array($run))  {
+            //  $s_proid = $row ['id'];
+            //   }
+            // }
           }
-          
-        }
       ?>
 </div>
 </div>

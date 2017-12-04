@@ -18,6 +18,7 @@
   <script src="bootstrap/js/tests/vendor/jquery.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Style sheet -->
   <script src="js/script.js"> </script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -25,26 +26,38 @@
 </head>
 <body>
 	<?php 
-    include('admin/header.php');
+    include('header.php');
+      $query = "SELECT * FROM SHOES"; 
+        $run = mysqli_query($conn, $query);
+        while ($row = mysqli_fetch_array($run))  {
+         $color = $row ['color'];
+         $size = $row ['size'];
+          }
   ?>
-  <div class="mypage-img"></div>
-  <div class="container">
-    <form>
-      <br>
-      <input type="text" name="name" class="form-control"><br>
-      <div class="form-group">
-      <label for="sel1">Select list (select one):</label>
-      <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select><br>
-    </form>
+  <div class="container product_page">
+    <div class="product-image col-lg-7 col-md-7 ">
+      <h1>Product Name</h1>
+      <div class="zoomple">
+     <span class='zoom' id='ex1'><img id="zoom_01" width='320' height='320' src='img/4-1.jpg'></span>
+      </div>
+    </div>
+    <div class="product-detail col-lg-5 col-md-5">
+      <h1>51, -</h1>
+      <div class="buy">
+        <h1>color:<?php $color   ?></h1>
+        <img src="img/4-1.jpg">
+        <br>
+        <h1>size</h1>
+        <?php $size?>
+        <i class="fa fa-truck fa-5x" aria-hidden="true"></i>
+        <h5> RETURN AND CHANGE &nbsp;&nbsp; SHIPS WITHIN 2-5 BUSINESS DAYS</h5>
+      </div>
+    </div>
   </div>
+
 	<?php 
-    include('admin/backtotop.php');
-    include('admin/footer.php');
+    include('backtotop.php');
+    include('footer.php');
 	?>
 </body>
 </html>
